@@ -75,7 +75,7 @@
         margin: 0.5rem;
     }
     .heroPic, .villainPic{
-        width: 70px;
+        width: 50px;
         margin-bottom: 0.5rem;
     }
     #heros,#villains{
@@ -89,4 +89,5 @@
     .hero, .villain{
         padding: 0.5rem;
     }
+    .name{margin: 0;}
 }
