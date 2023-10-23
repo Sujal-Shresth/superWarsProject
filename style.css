@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#score{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 3rem;
+    margin-top: 10vh;
+}
+
+.grid{
+    display: grid;
+}
+
+#container{
+    grid-template-columns: 2fr 150px 2fr;
+    margin: 0.5rem;
+    justify-content: center;
+}
+
+#heros,#villains{
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.hero, .villain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.heroPic, .villainPic{
+    width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.heroPower, .name, .villainPower{
+    margin: 5px;
+}
+
+.villainPower,.heroPower{
+    font-size: 2rem;
+}
+
+@media (max-width: 1200px){
+    #heros,#villains{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #container{
+        grid-template-columns: 2fr 150px 2fr;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 900px){
+    #heros,#villains{
+        grid-template-columns: repeat(1,0.75fr);
+    }
+    #container{
+        grid-template-columns: 2fr 100px 2fr;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .heroPic, .villainPic{
+        width: 70px;
+        margin-bottom: 0.5rem;
+    }
+    #heros,#villains{
+        grid-template-columns: repeat(1,0.5fr);
+    }
+}
